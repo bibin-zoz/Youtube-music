@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.leftside {
+    height: 100vh;
+    width: 350px;
+    background-color: black;
+    border-right: 1px groove gray;
+}
+
+.rightside {
+    width: 100%;
+    height: 100vh;
+    padding-right: 100px;
+    padding-left: 100px;
+    background: linear-gradient(rgb(0, 27, 32), rgb(1, 0, 11));
+}
+
+.leftnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-right: 75px;
+
+    border-bottom: .8px groove grey;
+    height: 64px;
+
+    box-sizing: border-box;
+
+}
+.rightnav{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-bottom: .8px groove grey;
+}
+.rightnav input{
+    background: transparent;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    min-width: 0;
+    
+}
+.searchbar{
+    display: flex;
+    height: 25px;
+    width: 480px;
+   
+    
+
+    border: .8px solid grey;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.15);  
+    
+    
+}
+.searchbar img{
+    padding-left: 0px;
+}
+
+.righticons{
+    display: flex;
+    justify-content: flex-end;
+    
+    width: 100%;
+}
+.dpimg{
+    margin-left: 5%;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.moods button{
+   
+    box-sizing: border-box;
+    height: 32px;
+    
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+   
+    margin: 40px 5px;
+    background: #fff;
+    color: #030303;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+}
+.moods button:hover{
+    background-color:  rgba(255, 255, 255, 0.505);
+    cursor: pointer;
+}
+
+
+
+.home{
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 10;
+    font-size: 16px;
+    font-family: Roboto, Noto, sans-serif;
+    margin: 0px 10px 0px 10px;
+    padding-left: 15px;
+    border-radius: 8px;
+    
+}
+.library,.explore{
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    height: 50px;
+    
+    font-weight: 10;
+    font-size: 16px;
+    font-family: Roboto, Noto, sans-serif;
+    margin: 0px 10px 0px 10px;
+    padding-left: 15px;
+    border-radius: 8px;
+    
+}
+.home img,.explore img,.library img,.playlist img{
+    margin: 0px 10px;
+    
+} 
+.menuitems{
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+
+}  
+.playlist{
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    font-weight: 10;
+    font-size: 14px;
+    font-family: Roboto, Noto, sans-serif;
+    margin: 10px 10px 0px 10px;
+    justify-content: center;
+    border-radius: 20px;
+    padding-right: 25px;
+
+}
+
+/* right side header */
+
+.rightheader{
+    width: 100%;
+    display: flex;
+}
+
+.userdp img{
+    
+    width: 56px;
+    height: 56px;;
+    border-radius: 50px;
+
+}
+.username{
+    
+    color: #aaa;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+}
+
+
+
+
+.rmiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    
+}
+
+.listenagain{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+.listenagain a{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: roboto, Arial, sans-serif;
+}
+.listenagain button{
+    box-sizing: border-box;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+    font-weight: 500;
+    
+    align-items: center;
+   
+    background: #fff;
+    color: #030303;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    width: 62px;
+    height: 34px;
+    cursor: pointer;
+    font-family: roboto, Arial, sans-serif;
+    
+}
+button:hover{
+    background-color:  rgba(255, 255, 255, 0.505);
+    cursor: pointer;
+}
+
+
+
+/* button prev next */
+
+
+.rright{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 20px;
+}
+
+.rright a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+
+  }
+  
+  .rright a:hover {
+    background-color: #484747;
+    color: black;
+    cursor: pointer;
+    
+  }
+  
+  .previous {
+    background-color: transparent;
+    color: rgb(241, 241, 241);
+    border: 1px solid grey;
+  }
+  
+  .next {
+    margin-left: 30px;
+    background-color: transparent;
+    
+    color: rgb(253, 252, 252);
+    border: 1px solid grey;
+  }
+
+  /*musci slide recentssss */
+
+.recentlist{
+    display: flex;
+    margin-top: 30px;
+    
+}
+.music{
+    margin: 30px;
+    width: 150px;
+}
+.video{
+    margin: 30px;
+    width: 250px;
+}
+
+
+.recentlist  [class^="vpic"]{
+    
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .pic{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vpic,.pic:hover{
+    cursor: pointer;
+    background-color:  rgba(255, 255, 255, 0.505) !important; 
+  }
+  
+  .songname{
+    color: white;
+    font-size: 14px;
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-weight: 500;
+  }
+.songdetail{
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    color: green;
+}
+  
+  
