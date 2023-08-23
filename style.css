@@ -7,17 +7,18 @@ body {
 }
 
 .leftside {
+    position: fixed;
     height: 100vh;
-    width: 350px;
+    width: 240px;
     background-color: black;
     border-right: 1px groove gray;
 }
 
 .rightside {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 340PX;
     background: linear-gradient(rgb(0, 27, 32), rgb(1, 0, 11));
 }
 
@@ -35,6 +36,9 @@ body {
 
 }
 .rightnav{
+    position: fixed;
+    background-color: rgba(0, 17, 32, 0.7);
+    width: 71%;
     height: 64px;
     display: flex;
     align-items: center;
@@ -78,7 +82,11 @@ body {
     height: 30px;
     border-radius: 50px;
 }
+.moods{
+    margin-top: 80px;
+    
 
+}
 .moods button{
    
     box-sizing: border-box;
@@ -143,6 +151,9 @@ body {
     border-bottom: 1px solid grey;
 
 }  
+.home:hover,.library:hover,.explore:hover,.playlist:hover{
+    background-color: rgba(172, 149, 149, 0.26)
+}
 .playlist{
     color: white;
     display: flex;
@@ -205,9 +216,9 @@ body {
     font-weight: 700;
     font-family: roboto, Arial, sans-serif;
 }
-.listenagain button{
+.listenagain button,.rright button{
     box-sizing: border-box;
-    border-radius: 18px;
+    border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.1);
     font-size: 14px;
     font-weight: 500;
@@ -218,9 +229,9 @@ body {
     color: #030303;
     background: rgba(255,255,255,0.1);
     color: #fff;
-    border-radius: 8px;
+    
     border: none;
-    width: 62px;
+    width: 70px;
     height: 34px;
     cursor: pointer;
     font-family: roboto, Arial, sans-serif;
@@ -261,14 +272,16 @@ button:hover{
     background-color: transparent;
     color: rgb(241, 241, 241);
     border: 1px solid grey;
+    border-radius: 50%;
   }
   
   .next {
-    margin-left: 30px;
+    margin-left: 10px;
     background-color: transparent;
     
     color: rgb(253, 252, 252);
     border: 1px solid grey;
+    border-radius: 50%;
   }
 
   /*musci slide recentssss */
@@ -276,6 +289,7 @@ button:hover{
 .recentlist{
     display: flex;
     margin-top: 30px;
+    margin-left: 0;
     
 }
 .music{
@@ -303,15 +317,18 @@ button:hover{
     
     width: 150px;
     height: 150px;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .vpic,.pic:hover{
+  .vpic:hover,.pic:hover{
     cursor: pointer;
-    background-color:  rgba(255, 255, 255, 0.505) !important; 
+    
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
   }
   
   .songname{
@@ -328,4 +345,123 @@ button:hover{
     color: green;
 }
   
-  
+
+
+/* trending part*/
+
+.thead h3{
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #a19a9a;
+    margin: 0 0 2px;
+}
+.bottomhead h2{
+    color: white;
+    font-family: YouTube Sans,Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+.bottomhead{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+.trendhead{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.trendhead button{
+    margin-right: 20px;
+}
+/*<!--tblock1-->*/
+
+
+
+/* trending part list*/
+.tsonglist{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cover{
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    
+}
+
+.tlist1{
+    display: flex;
+    padding: 5px;
+}
+.tmusicdetail{
+    padding-left: 5px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+.tname{
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(255, 255, 255); 
+    overflow: hidden;
+}
+.tspec{
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #ffffffb3;
+    
+    
+}
+.cover:hover,.tlist1:hover{
+    cursor: pointer;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/*forgotten favvvv*/
+
+.forgotten{
+    margin-top: 50px;
+    
+    white-space: nowrap;
+    
+    
+}
+.forgotten .recentlist{
+    
+    overflow-x: auto;
+    width: 1078px;
+}
+.details .songname{
+    width:250px;
+    overflow: hidden;
+
+} 
+.forgotten::-webkit-scrollbar{
+    width: 0px;
+    height: 0;
+}
+
+
+.recentlist::-webkit-scrollbar {
+width: 0px; 
+background: transparent; 
+}
+
+.forgotten::-webkit-scrollbar-thumb {
+background: #000000;
+}
